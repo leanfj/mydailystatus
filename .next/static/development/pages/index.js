@@ -56,10 +56,27 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 10
+      lineNumber: 5,
+      columnNumber: 5
     }
-  });
+  }, __jsx("p", {
+    className: "text-center text-4xl my-20 font max-w-md mx-auto",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 7
+    }
+  }, "Veja como as pessoas ao seu redor est\xE3o"), __jsx("a", {
+    href: "/api/login",
+    className: "mx-auto w-1/4 block text-center py-4 px-2 rounded font-bold bg-pink-800 text-white shadow",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
+  }, "Come\xE7e por aqui"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
