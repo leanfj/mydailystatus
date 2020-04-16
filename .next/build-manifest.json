@@ -24,7 +24,7 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/app": [
+    "/create-status": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

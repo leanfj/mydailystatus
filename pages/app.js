@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import auth0 from "../lib/auth0";
+import auth0 from "../lib/Auth0";
 import router from "next/router";
 import { db } from "../lib/db";
 
@@ -7,10 +7,12 @@ const app = (props) => {
   useEffect(() => {
     if (!props.isAuth) {
       router.push("/");
+    } else if (props.forceCreate) {
+      router.push("/create-status");
     }
   });
 
-  if (!props.isAuth) {
+  if (!props.isAuth || props.forceCreate) {
     return null;
   }
 

@@ -107,6 +107,14 @@ var Header = function Header() {
       lineNumber: 15,
       columnNumber: 7
     }
+  }, __jsx(NavLink, {
+    href: "/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 9
+    }
   }, __jsx("img", {
     src: "/logo.png",
     alt: "Logo",
@@ -114,15 +122,15 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
+      lineNumber: 17,
+      columnNumber: 11
     }
-  })), __jsx("div", {
+  }))), __jsx("div", {
     className: "bg-gray-500 py-4 text-center",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 20,
       columnNumber: 7
     }
   }, __jsx(NavLink, {
@@ -130,7 +138,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 21,
       columnNumber: 9
     }
   }, "Sobre"), __jsx(NavLink, {
@@ -138,7 +146,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 22,
       columnNumber: 9
     }
   }, "Cadastro"), __jsx(NavLink, {
@@ -146,7 +154,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 9
     }
   }, "Entrar")));

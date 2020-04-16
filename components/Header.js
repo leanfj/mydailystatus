@@ -13,7 +13,9 @@ const Header = () => {
   return (
     <div className="bg-gray-200 ">
       <h1>
-        <img src="/logo.png" alt="Logo" className="h-24 py-4 mx-auto" />
+        <NavLink href="/">
+          <img src="/logo.png" alt="Logo" className="h-24 py-4 mx-auto" />
+        </NavLink>
       </h1>
       <div className="bg-gray-500 py-4 text-center">
         <NavLink href="/sobre">Sobre</NavLink>
