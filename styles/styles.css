@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  text-align: center;
+}
