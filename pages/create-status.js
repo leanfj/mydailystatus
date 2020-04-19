@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Auth0 from "../lib/Auth0";
 import Axios from "axios";
+import router from "next/router";
 
 const createStatus = (props) => {
   const [dados, setDados] = useState({
@@ -39,6 +40,7 @@ const createStatus = (props) => {
 
   const saveStatus = async () => {
     await Axios.post("/api/save-status", dados);
+    router.push("/app");
   };
 
   return (
@@ -50,7 +52,7 @@ const createStatus = (props) => {
           name="status"
           value="bem"
           type="radio"
-          className=""
+          className="mr-4"
         />
         Estou me sentindo bem
       </label>
@@ -60,7 +62,7 @@ const createStatus = (props) => {
           name="status"
           value="resfriado"
           type="radio"
-          className=""
+          className="mr-4"
         />
         Estou com sintomas de resfriado
       </label>
@@ -70,7 +72,7 @@ const createStatus = (props) => {
           name="status"
           value="gripe"
           type="radio"
-          className=""
+          className="mr-4"
         />
         Estou com sintomas de gripe
       </label>
@@ -80,7 +82,7 @@ const createStatus = (props) => {
           name="status"
           value="covid"
           type="radio"
-          className=""
+          className="mr-4"
         />
         Estou com sintomas de COVID-19
       </label>
@@ -98,7 +100,6 @@ const createStatus = (props) => {
           Salvar meu status
         </button>
       </div>
-      <pre>{JSON.stringify(dados, null, 2)}</pre>
     </div>
   );
 };
@@ -107,7 +108,6 @@ export default createStatus;
 
 export async function getServerSideProps({ req, res }) {
   const session = await Auth0.getSession(req);
-
   if (session) {
     return {
       props: {

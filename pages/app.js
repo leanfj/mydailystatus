@@ -19,7 +19,12 @@ const app = (props) => {
 
   return (
     <div>
-      <h1>App</h1>
+      <h1
+        className="my-4 text-2xl text-center
+      "
+      >
+        Lista de pessoas auto-avaliadas
+      </h1>
       <table>
         <thead>
           <tr>
@@ -33,9 +38,16 @@ const app = (props) => {
           {props.checkins.map((checkin) => {
             return (
               <tr key={checkin.id}>
-                <td>{checkin.id === props.user.id && "Seu status"}</td>
+                <td>
+                  {checkin.id === props.user.sub
+                    ? "Seu Status"
+                    : "Pessoa próxima"}
+                </td>
                 <td>{checkin.status}</td>
-                <td>{JSON.stringify(checkin.coords)}</td>
+                <td>
+                  Latitude: {checkin.coords.lat} / Longitude:{" "}
+                  {checkin.coords.long}
+                </td>
                 <td>{checkin.distance}</td>
               </tr>
             );
@@ -64,10 +76,11 @@ export async function getServerSideProps({ req, res }) {
       .get();
 
     const todaysData = todayChekin.data();
-    const myCoordinates = todaysData.coordinates;
+
     let forceCreate = true;
 
     if (todaysData) {
+      const myCoordinates = todaysData.coordinates;
       forceCreate = false;
 
       const checkins = await db
