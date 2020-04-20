@@ -23,10 +23,6 @@
     "/app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-    ],
-    "/create-status": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }

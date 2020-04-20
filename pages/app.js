@@ -3,6 +3,7 @@ import router from "next/router";
 import { db } from "../lib/db";
 import auth0 from "../lib/Auth0";
 import { haversineDistance } from "../lib/haversineDistance";
+import Map from "../components/Map";
 
 const app = (props) => {
   useEffect(() => {
@@ -54,6 +55,7 @@ const app = (props) => {
           })}
         </tbody>
       </table>
+      <Map markers={props.checkins} user={props.user.sub} />
     </div>
   );
 };
