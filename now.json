@@ -17,7 +17,7 @@
       "AUTH0_SCOPE": "openid profile",
       "AUTH0_DOMAIN": "leanfj.auth0.com",
       "AUTH0_REDIRECT_URI": "https://mydailystatus.leanfj.now.sh/api/callback",
-      "AUTH0_POST_LOGOUT_REDIRECT_URI": "https://mydailystatus.leanfj.now.sh/",
+      "AUTH0_POST_LOGOUT_REDIRECT_URI": "@auth0-logout-redirect",
       "AUTH0_SESSION_COOKIE_SECRET": "lfdapoewiidfaskdaiwofiaodasklfdi",
       "AUTH0_SESSION_COOKIE_LIFE_TIME": "3600",
       "MAPS_API_KEY": "@maps-api-key"
